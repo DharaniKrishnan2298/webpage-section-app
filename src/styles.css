@@ -43,14 +43,21 @@ body {
     opacity: 1;
   }
   
-  /* ✅ Testimonials Section */
+  
   .testimonials {
     text-align: left;
-    max-width: 1100px;
-    margin: 60px auto;
+    margin: 60px 2vw;
   }
   
   .testimonials h2 {
+    font-family: "SuisseWorks", "Georgia", "Times", "Times New Roman", "serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 600;
+    font-size: clamp(2rem, calc(2rem +(3.2 - 2)* calc((100vw - 36rem) /(144 - 36))), 3.2rem);
+    line-height: 1.5;
+    letter-spacing: -.016rem;
+    max-width: 36em;
+    margin: 0 1.5vw ;
+    margin-top: 4.5vh;
     font-size: 28px;
     font-weight: bold;
     color: #333;

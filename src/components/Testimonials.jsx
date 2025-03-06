@@ -52,8 +52,8 @@ const Testimonials = () => {
   };
 
   return (
-    <section>
-      <h2 className="ud-heading-serif-xxl">See what others are achieving through learning</h2>
+    <section className='testimonials'>
+      <h2>See what others are achieving through learning</h2>
       <div className="testimonial-container">
         <button className="scroll-btn left" onClick={() => scroll('left')}>&#8249;</button>
         <div className="testimonial-cards" ref={scrollRef}>
