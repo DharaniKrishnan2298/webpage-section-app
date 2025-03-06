@@ -1,0 +1,158 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+ 
+  .trusted-companies {
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .trusted-companies .banner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .trusted-companies p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .trusted-companies .logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .trusted-companies img {
+    height: 40px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+  
+  .trusted-companies img:hover {
+    opacity: 1;
+  }
+  
+  /* ✅ Testimonials Section */
+  .testimonials {
+    text-align: left;
+    max-width: 1100px;
+    margin: 60px auto;
+  }
+  
+  .testimonials h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+
+  .testimonial-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+  .testimonial-cards {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px;
+    scrollbar-width: none;
+  }
+  
+  .testimonial-cards::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+  .card {
+    flex: 0 0 320px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card .quote {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .card .author {
+    display: block;
+    font-weight: bold;
+    color: #222;
+    margin: 15px 0 10px;
+  }
+  
+ 
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out;
+    display: none;
+  }
+  
+  .scroll-btn:hover {
+    background: #eee;
+  }
+  
+  .left {
+    left: -40px;
+  }
+  
+  .right {
+    right: -40px;
+  }
+  
+  
+  @media (max-width: 1100px) {
+    .scroll-btn {
+      display: block;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .trusted-companies .logos {
+      gap: 20px;
+    }
+  
+    .left {
+      left: 10px;
+    }
+  
+    .right {
+      right: 10px;
+    }
+  }
+  
